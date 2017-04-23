@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Exam 2 Problem - Kyle Filby</title>
+    <script src="js/Exam2problem.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/Exam2problem.css" />
+</head>
+
+<body>
+
+    <h1>Exam 2 Problem</h1>
+    <hr>
+        <select onchange="MenuChoice()" id="menu">
+        <option>Please make a selection:</option>
+        <option>Display Category List</option>
+        <option>Add a Product Category</option>
+        <option>Change Category Description</option>
+        <option>Delete a Category</option>
+        <option>About Me</option>
+        </select>
+    <hr>
+
+
+<section id="section1" class="section1">
+    <body onload="CategoryList()"></body>
+    <label id="Categorylist"></label>
+
+</section>
+
+<section id="section2" class="section2">
+    <label>Please enter a name for a new Category:</label>
+    <input type="text" id="catname">
+    <br>
+    <label>Please enter a Category Description:</label>
+    <input type="text" id="catdesc">
+    <br>
+    <button onclick="AddCategory()" id="add">Add Category</button>
+    <hr>
+    <br>
+    <label id="result1">The operation's result will display here.</label>
+
+</section>
+
+<section id="section3" class="section3">
+    <label>Please enter a Category ID:</label>
+    <input type="text" id="catID">
+    <br>
+    <label>Please enter a new Category Description:</label>
+    <input type="text" id="catDesc2">
+    <br>
+    <button onclick="ChangeDescription()" id="description">Update Category Description</button>
+    <hr>
+    <br>
+    <label id="result2">The operation's result will display here.</label>
+</section>
+
+
+
+<section id="section4" class="section4">
+    <label>Please enter a Category ID:</label>
+    <input type="text" id="catID2">
+    <br>
+    <button onclick="DeleteCategory()" id="delete">Delete Category</button>
+    <hr>
+    <br>
+    <label id="result3">The operation's result will display here.</label>
+
+</section>
+
+<section id="section5" class="section5">
+This is supposed to be an about me section.
+<br>
+I am Kyle Filby. I am a senior with 5 more classes to go.
+<br>
+I'm taking 4 summer classes, and 1 in the fall, and then I should be done.
+<br>
+
+</section>
+
+
+    <footer>
+        <hr>
+        Kyle Filby - kfilby@uab.edu
+    </footer>
+
+</body>
+</html>
